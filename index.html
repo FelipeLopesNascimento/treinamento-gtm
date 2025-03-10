@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Simples para Testar GTM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            width: 100%;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            width: 100%;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao meu site de teste GTM</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Sobre o Site</h2>
+            <p>Este é um site simples criado para testar a integração com o Google Tag Manager (GTM). Aqui você encontrará um título, alguns parágrafos, imagens, botões e um formulário.</p>
+            <p>Utilize este site para experimentar diferentes tags e rastrear interações de usuários.</p>
+        </section>
+        <section>
+            <h2>Imagens</h2>
+            <img src="https://via.placeholder.com/800x400" alt="Imagem de exemplo 1">
+            <img src="https://via.placeholder.com/800x400" alt="Imagem de exemplo 2">
+        </section>
+        <section>
+            <h2>Botões</h2>
+            <button onclick="alert('Botão 1 clicado!')">Botão 1</button>
+            <button onclick="alert('Botão 2 clicado!')">Botão 2</button>
+        </section>
+        <section>
+            <h2>Formulário de Contato</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
